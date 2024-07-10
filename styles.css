@@ -1,0 +1,86 @@
+@import url('https://use.typekit.net/tqe2ncl.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Marvin", sans-serif;
+    cursor: url('assets/img/goog2.png') 16 16, auto;
+}
+
+.hero {
+    background-image: url('assets/img/WhiteWall.jpeg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.display-1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    /* Adjust color if necessary */
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+}
