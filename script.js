@@ -1,9 +1,15 @@
-document.addEventListener('mousemove', function (e) {
-    const goodLuckSpot = document.querySelector('.good-luck-spot');
-    const rect = goodLuckSpot.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-    goodLuckSpot.style.transform = `translate(${x * 0.05}px, ${y * 0.05}px)`;
+document.addEventListener('DOMContentLoaded', function () {
+    const audio = new Audio('assets/sound/writing.mp3'); // Path to the sound file
+    const textElement = document.querySelector('.handwritten-script span');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    });
+    observer.observe(textElement);
 });
-
-

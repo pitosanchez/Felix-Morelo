@@ -1,4 +1,3 @@
-/* Combined CSS */
 @import url('https://use.typekit.net/tqe2ncl.css');
 
 body {
@@ -46,52 +45,50 @@ body {
     width: 35%;
     height: auto;
     margin-bottom: 0px;
+    animation: rotate 10s ease-in-out 1 forwards;
 }
 
-.display-1 {
-    font-size: 7.5rem;
-    font-weight: bold;
-    color: transparent;
-    font-family: "Marvin", sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.display-1 span {
-    animation: animate 3s linear infinite;
-    animation-delay: calc(0.3s * var(--i));
-}
-
-@keyframes animate {
-    0% {
-        color: #fff;
-        filter: blur(2px);
-        text-shadow: 0 0 10px #00b3ff,
-            0 0 20px #00b3ff,
-            0 0 40px #00b3ff,
-            0 0 60px #00b3ff,
-            0 0 80px #00b3ff,
-            0 0 100px #00b3ff,
-            0 0 200px #00b3ff,
-            0 0 400px #00b3ff;
+@keyframes rotate {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
     }
 
-    30%,
-    70% {
-        color: #fff;
-        filter: blur(2px) hue-rotate(360deg);
-        text-shadow: 0 0 10px #00b3ff,
-            0 0 20px #00b3ff,
-            0 0 40px #00b3ff,
-            0 0 60px #00b3ff,
-            0 0 80px #00b3ff;
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.handwritten-script span {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
     }
 
-    100% {
-        color: transparent;
-        box-shadow: none;
-        filter: blur(2px) hue-rotate(2deg);
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
     }
 }
 
