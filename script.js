@@ -5,3 +5,5 @@ document.addEventListener('mousemove', function (e) {
     const y = e.clientY - rect.top - rect.height / 2;
     goodLuckSpot.style.transform = `translate(${x * 0.05}px, ${y * 0.05}px)`;
 });
+
+

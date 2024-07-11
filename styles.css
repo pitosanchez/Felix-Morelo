@@ -1,12 +1,21 @@
+/* Combined CSS */
 @import url('https://use.typekit.net/tqe2ncl.css');
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./pic/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Tilt Neon", sans-serif;
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Marvin", sans-serif;
     cursor: url('assets/img/goog2.png') 16 16, auto;
 }
 
@@ -40,10 +49,50 @@ body {
 }
 
 .display-1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
-    color: black;
-    /* Adjust color if necessary */
+    color: transparent;
+    font-family: "Marvin", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.display-1 span {
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.3s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 60px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 100px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 400px #00b3ff;
+    }
+
+    30%,
+    70% {
+        color: #fff;
+        filter: blur(2px) hue-rotate(360deg);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 60px #00b3ff,
+            0 0 80px #00b3ff;
+    }
+
+    100% {
+        color: transparent;
+        box-shadow: none;
+        filter: blur(2px) hue-rotate(2deg);
+    }
 }
 
 header {
