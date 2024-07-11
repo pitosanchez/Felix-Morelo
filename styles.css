@@ -1,7 +1,7 @@
 @import url('https://use.typekit.net/tqe2ncl.css');
 
 body {
-    padding: 0;
+    padding: 0%;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -34,9 +34,9 @@ body {
 }
 
 .main-image {
-    width: 50%;
+    width: 40%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .display-1 {
