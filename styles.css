@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
 }
+}
 
 html {
     scroll-behavior: smooth;
@@ -214,7 +215,7 @@ section {
     font-size: 2rem;
 }
 
-//* Gallery Section Styles */
+* Gallery Section Styles */
 .gallery-section {
     padding: 4rem 2rem;
     background-color: black;
@@ -442,3 +443,4 @@ section {
 
     .display-1 {
         font-size: 7.5rem;
+    }
