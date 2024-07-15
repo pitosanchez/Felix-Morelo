@@ -1,15 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const audio = new Audio('assets/sound/writing.mp3'); // Path to the sound file
-    const textElement = document.querySelector('.handwritten-script span');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                audio.play();
-            } else {
-                audio.pause();
-                audio.currentTime = 0;
-            }
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    const showSlide = function(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
         });
+    };
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+        showSlide(currentIndex);
     });
-    observer.observe(textElement);
+
+    document.querySelector('.next').addEventListener('click', () => {
+        currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+        showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex);
 });
+
