@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,21 +8,38 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/tqe2ncl.css" />
 </head>
-
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 text-white">
         <a href="index.html"><img src="assets/img/logo.png" alt="Felix Morelo" class="logo" /></a>
         <nav>
             <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#about">About Us</a>
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="gallery.html">Nature</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">People</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Architecture</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Animals</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Sports</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Travel</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="deepDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Deep Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="deepDropdown">
+                                <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contact">Contacts</a>
-                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -38,27 +54,14 @@
     <section id="about" class="about-section">
         <h2>About Felix Morelo</h2>
         <div class="about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, nulla et euismod tincidunt,
-                nisi eros faucibus urna, eu varius enim risus facilisis dolor. Nullam euismod justo vel felis feugiat
-                faucibus. Nulla facilisi. Donec vulputate, sapien ac pellentesque iaculis, felis magna sagittis turpis,
-                at vehicula odio tortor sit amet metus. Cras egestas ultricies lorem, ac placerat massa volutpat vel.
-                Integer a enim ac magna malesuada fringilla. Vivamus condimentum ligula in quam elementum, nec pharetra
-                urna vestibulum. Aliquam erat volutpat. Sed a nisl et sapien suscipit ullamcorper.</p>
-
-            <p>Proin malesuada magna ut libero aliquam, vel vehicula felis mollis. Integer ac ante at odio faucibus
-                aliquam. Ut aliquam, velit id bibendum auctor, justo urna tempor magna, at semper elit turpis nec nunc.
-                Pellentesque in dignissim ligula. Nullam tristique, nisi a interdum fermentum, felis erat tincidunt
-                orci,
-                at posuere purus justo nec nisl. Aliquam erat volutpat. Nulla lacinia sit amet quam sit amet posuere.
-                Suspendisse potenti. Fusce quis libero nec nisi faucibus tempor. Morbi vulputate, ipsum a facilisis
-                imperdiet, eros nulla sollicitudin orci, et pharetra arcu nisi id elit. Etiam euismod purus in diam
-                blandit, sit amet dignissim lacus facilisis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, nulla et euismod tincidunt, nisi eros faucibus urna, eu varius enim risus facilisis dolor. Nullam euismod justo vel felis feugiat faucibus. Nulla facilisi. Donec vulputate, sapien ac pellentesque iaculis, felis magna sagittis turpis, at vehicula odio tortor sit amet metus. Cras egestas ultricies lorem, ac placerat massa volutpat vel. Integer a enim ac magna malesuada fringilla. Vivamus condimentum ligula in quam elementum, nec pharetra urna vestibulum. Aliquam erat volutpat. Sed a nisl et sapien suscipit ullamcorper.</p>
+            <p>Proin malesuada magna ut libero aliquam, vel vehicula felis mollis. Integer ac ante at odio faucibus aliquam. Ut aliquam, velit id bibendum auctor, justo urna tempor magna, at semper elit turpis nec nunc. Pellentesque in dignissim ligula. Nullam tristique, nisi a interdum fermentum, felis erat tincidunt orci, at posuere purus justo nec nisl. Aliquam erat volutpat. Nulla lacinia sit amet quam sit amet posuere. Suspendisse potenti. Fusce quis libero nec nisi faucibus tempor. Morbi vulputate, ipsum a facilisis imperdiet, eros nulla sollicitudin orci, et pharetra arcu nisi id elit. Etiam euismod purus in diam blandit, sit amet dignissim lacus facilisis.</p>
         </div>
     </section>
 
     <section id="gallery" class="gallery-section">
         <h2>Gallery</h2>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -117,8 +120,14 @@
         <p>&copy; 2024 Felix Morelo Art. All rights reserved.</p>
     </footer>
 
+    <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
