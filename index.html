@@ -1,115 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felix Morelo</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/tqe2ncl.css" />
-</head>
-<body>
-    <header class="d-flex justify-content-between align-items-center p-3 text-white">
-        <a href="index.html"><img src="assets/img/logo.png" alt="Felix Morelo" class="logo" /></a>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#aboutus">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contacts">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 text-white"
+    >
+      <a href="index.html"
+        ><img src="assets/img/logo.png" alt="Felix Morelo" class="logo"
+      /></a>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="hero">
-        <div class="title-container">
-            <img src="assets/img/redgold2.png" alt="Red Gold" class="main-image" />
-            <div class="display-1">By <span class="neon-text">Felix Morelo</span></div>
+      <div class="title-container">
+        <img src="assets/img/redgold2.png" alt="Red Gold" class="main-image" />
+        <div class="display-1">
+          By <span class="neon-text">Felix Morelo</span>
         </div>
+      </div>
     </main>
 
     <section id="about" class="about-section">
-        <h2>About Felix Morelo</h2>
-        <div class="about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, nulla et euismod tincidunt, nisi eros faucibus urna, eu varius enim risus facilisis dolor. Nullam euismod justo vel felis feugiat faucibus. Nulla facilisi. Donec vulputate, sapien ac pellentesque iaculis, felis magna sagittis turpis, at vehicula odio tortor sit amet metus. Cras egestas ultricies lorem, ac placerat massa volutpat vel. Integer a enim ac magna malesuada fringilla. Vivamus condimentum ligula in quam elementum, nec pharetra urna vestibulum. Aliquam erat volutpat. Sed a nisl et sapien suscipit ullamcorper.</p>
-            <p>Proin malesuada magna ut libero aliquam, vel vehicula felis mollis. Integer ac ante at odio faucibus aliquam. Ut aliquam, velit id bibendum auctor, justo urna tempor magna, at semper elit turpis nec nunc. Pellentesque in dignissim ligula. Nullam tristique, nisi a interdum fermentum, felis erat tincidunt orci, at posuere purus justo nec nisl. Aliquam erat volutpat. Nulla lacinia sit amet quam sit amet posuere. Suspendisse potenti. Fusce quis libero nec nisi faucibus tempor. Morbi vulputate, ipsum a facilisis imperdiet, eros nulla sollicitudin orci, et pharetra arcu nisi id elit. Etiam euismod purus in diam blandit, sit amet dignissim lacus facilisis.</p>
-        </div>
+      <h2>About Felix Morelo</h2>
+      <div class="about-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          interdum, nulla et euismod tincidunt, nisi eros faucibus urna, eu
+          varius enim risus facilisis dolor. Nullam euismod justo vel felis
+          feugiat faucibus. Nulla facilisi. Donec vulputate, sapien ac
+          pellentesque iaculis, felis magna sagittis turpis, at vehicula odio
+          tortor sit amet metus. Cras egestas ultricies lorem, ac placerat massa
+          volutpat vel. Integer a enim ac magna malesuada fringilla. Vivamus
+          condimentum ligula in quam elementum, nec pharetra urna vestibulum.
+          Aliquam erat volutpat. Sed a nisl et sapien suscipit ullamcorper.
+        </p>
+        <p>
+          Proin malesuada magna ut libero aliquam, vel vehicula felis mollis.
+          Integer ac ante at odio faucibus aliquam. Ut aliquam, velit id
+          bibendum auctor, justo urna tempor magna, at semper elit turpis nec
+          nunc. Pellentesque in dignissim ligula. Nullam tristique, nisi a
+          interdum fermentum, felis erat tincidunt orci, at posuere purus justo
+          nec nisl. Aliquam erat volutpat. Nulla lacinia sit amet quam sit amet
+          posuere. Suspendisse potenti. Fusce quis libero nec nisi faucibus
+          tempor. Morbi vulputate, ipsum a facilisis imperdiet, eros nulla
+          sollicitudin orci, et pharetra arcu nisi id elit. Etiam euismod purus
+          in diam blandit, sit amet dignissim lacus facilisis.
+        </p>
+      </div>
     </section>
 
     <section id="gallery" class="gallery-section">
-        <h2>Gallery</h2>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/img/blackGood.jpg" class="d-block w-100" alt="Art 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/img/redLuck.jpg" class="d-block w-100" alt="Art 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/GreenGood.jpg" class="d-block w-100" alt="Art 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      <h2>Gallery</h2>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="assets/img/blackGood.jpg"
+              class="d-block w-100"
+              alt="Art 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="assets/img/redLuck.jpg"
+              class="d-block w-100"
+              alt="Art 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/GreenGood.jpg"
+              class="d-block w-100"
+              alt="Art 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" />
-            <input type="email" name="email" placeholder="Your Email" />
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <div class="social-media-links">
-            <a href="https://facebook.com/felixmorelo">Facebook</a>
-            <a href="https://twitter.com/felixmorelo">Twitter</a>
-            <a href="https://instagram.com/felixmorelo">Instagram</a>
-        </div>
+      <h2>Contact</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-media-links">
+        <a href="https://facebook.com/felixmorelo">Facebook</a>
+        <a href="https://twitter.com/felixmorelo">Twitter</a>
+        <a href="https://instagram.com/felixmorelo">Instagram</a>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Felix Morelo Art. All rights reserved.</p>
+      <p>&copy; 2024 Felix Morelo Art. All rights reserved.</p>
     </footer>
 
     <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
