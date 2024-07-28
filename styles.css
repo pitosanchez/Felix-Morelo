@@ -192,7 +192,7 @@ section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
 }
-
+/* 
 .carousel-indicators img {
     width: 70px;
     display: block;
@@ -204,7 +204,7 @@ section {
 
 .carousel-indicators {
     position: unset;
-}
+} */
 
 @media (max-width: 768px) {
     .slider-container {
