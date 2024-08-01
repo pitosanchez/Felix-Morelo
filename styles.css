@@ -16,7 +16,8 @@ body {
     font-family: "bodega-serif", sans-serif;
     color: #fff;
     background: url(./pic/bg.png) no-repeat fixed center/cover;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    /* Base font size is 16px */
 }
 
 /* Header Styles */
@@ -60,7 +61,8 @@ nav a {
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 600;
 }
 
@@ -101,7 +103,8 @@ nav a:hover {
 .display-1 {
     font-family: 'bodega-serif', cursive;
     font-weight: 400;
-    font-size: 7.5rem;
+    font-size: 3rem;
+    /* 48px */
     color: white;
     position: absolute;
     bottom: 10%;
@@ -115,6 +118,8 @@ nav a:hover {
     text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
     animation: neonPulse 1.5s infinite alternate;
 }
+
+/*keyframes*/
 
 @keyframes neonPulse {
     0% {
@@ -157,7 +162,8 @@ section {
 }
 
 .about-section h2 {
-    font-size: 4.5rem;
+    font-size: 2.8125rem;
+    /* 45px */
     margin-bottom: 2rem;
 }
 
@@ -171,14 +177,16 @@ section {
 }
 
 .about-content h3 {
-    font-size: 3rem;
+    font-size: 1.875rem;
+    /* 30px */
     margin-bottom: 1.5rem;
 }
 
 .about-content p {
     margin-bottom: 1rem;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    /* 20px */
     text-align: justify;
 }
 
@@ -235,6 +243,8 @@ section {
     margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
+    /* 16px */
 }
 
 .contact-section form button {
@@ -244,13 +254,16 @@ section {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    /* 16px */
 }
 
 /* Social Media Links Styles */
 .social-media-links a {
     margin: 0 1rem;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    /* 18px */
     transition: color 0.3s ease;
 }
 
@@ -276,11 +289,13 @@ section {
     }
 
     nav a {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
+        /* 12px */
     }
 
     .display-1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        /* 40px */
         bottom: 20%;
     }
 
@@ -309,11 +324,13 @@ section {
     }
 
     nav a {
-        font-size: 1.3rem;
+        font-size: 0.8125rem;
+        /* 13px */
     }
 
     .display-1 {
-        font-size: 5rem;
+        font-size: 3.125rem;
+        /* 50px */
         bottom: 15%;
     }
 }
