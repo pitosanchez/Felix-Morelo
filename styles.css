@@ -100,37 +100,6 @@ nav a:hover {
     z-index: 1;
 }
 
-.display-1 {
-    font-family: 'bodega-serif', cursive;
-    font-weight: 400;
-    font-size: 3rem;
-    /* 48px */
-    color: white;
-    position: absolute;
-    bottom: 10%;
-    right: 2%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.neon-text {
-    color: #eee4df;
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
-    animation: neonPulse 1.5s infinite alternate;
-}
-
-/*keyframes*/
-
-@keyframes neonPulse {
-    0% {
-        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
-    }
-
-    100% {
-        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
-    }
-}
-
 @keyframes rotate {
     from {
         transform: perspective(1000px) rotateY(0deg);
@@ -139,6 +108,97 @@ nav a:hover {
     to {
         transform: perspective(1000px) rotateY(360deg);
     }
+}
+
+/* New Hero Left and Right Styles */
+.hero-left {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.hero-left {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.hero-left .hero-image {
+    width: 100%;
+    max-width: 300px;
+    /* Adjust as necessary */
+    margin: 15;
+    box-shadow: 2px 2px 5px rgba(169, 169, 169, 0.7);
+}
+
+.hero-left .felix-image {
+    margin-bottom: 20px;
+    width: 55rem;
+}
+
+.hero-left .morelo-image {
+    margin-top: 10px;
+    width: 77rem;
+    /* Adjust this to control the overlap */
+}
+
+.hero-right {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+}
+
+.hero-right img {
+    width: 25rem;
+    animation: spin 2s linear 2;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Menu Button and Page Styles */
+.menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.menu-page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 50, 0.9);
+    z-index: 10;
+    text-align: center;
+    padding-top: 20%;
+    color: #DCDCDC;
+}
+
+.menu-page a {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #DCDCDC;
 }
 
 /* Section Styles */
@@ -190,29 +250,11 @@ section {
     text-align: justify;
 }
 
-.about-content img {
-    width: 100%;
-    height: auto;
-}
-
 /* Gallery Section Styles */
 .gallery-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
 }
-/* 
-.carousel-indicators img {
-    width: 70px;
-    display: block;
-}
-
-.carousel-indicators button {
-    width: max-content !important;
-}
-
-.carousel-indicators {
-    position: unset;
-} */
 
 @media (max-width: 768px) {
     .slider-container {
