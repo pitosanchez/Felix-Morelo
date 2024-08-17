@@ -73,7 +73,7 @@ nav a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background: url('assets/img/WhiteWall.jpeg') no-repeat fixed center/cover;
+    background: url('assets/img/concrete.jpeg') no-repeat fixed center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
