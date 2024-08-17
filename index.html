@@ -30,7 +30,6 @@
       <nav>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            =
             <a class="nav-link text-white" href="#about">About Us</a>
           </li>
           <li class="nav-item">
@@ -45,12 +44,30 @@
 
     <main class="hero">
       <div class="title-container">
-        <img src="assets/img/redgold2.png" alt="Red Gold" class="main-image" />
-        <div class="display-1">
-          By <span class="neon-text">Felix Morelo</span>
-        </div>
+        <!-- <img src="assets/img/redgold2.png" alt="Red Gold" class="main-image" /> -->
       </div>
+
+      <!-- Additional Hero Elements -->
+      <div class="hero-left">
+        <img src="assets/img/FelixCube.png" alt="Felix" class="felix-image" />
+        <img
+          src="assets/img/MoreloCube.png"
+          alt="Morelo"
+          class="morelo-image"
+        />
+      </div>
+
+      <div class="hero-right">
+        <img src="assets/img/blucopy.png" alt="Redgold" />
+      </div>
+      <button class="menu-button" onclick="toggleMenu()">MENU</button>
     </main>
+
+    <div class="menu-page" id="menuPage">
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
 
     <section id="about" class="about-section">
       <h2>About Felix Morelo</h2>
