@@ -135,13 +135,14 @@ nav a:hover {
 }
 
 .hero-left .felix-image {
-    margin-bottom: 20px;
-    width: 55rem;
+    margin-top: 180px;
+    margin-bottom: -100px;
+    width: 50rem;
 }
 
 .hero-left .morelo-image {
-    margin-top: 10px;
-    width: 77rem;
+    margin-top: 150px;
+    width: 70rem;
     /* Adjust this to control the overlap */
 }
 
@@ -152,7 +153,7 @@ nav a:hover {
 }
 
 .hero-right img {
-    width: 25rem;
+    width: 35rem;
     animation: spin 2s linear 2;
 }
 
