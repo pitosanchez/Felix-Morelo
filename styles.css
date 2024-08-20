@@ -1,5 +1,7 @@
 @import url('https://use.typekit.net/tqe2ncl.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -34,47 +36,81 @@ header {
     align-items: center;
 }
 
-header .logo {
-    position: absolute;
-    left: 2rem;
-    width: 150px;
+header .logo-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
+header .logo {
+    width: 5rem;
+    cursor: pointer;
+}
+
+/* Menu Button Styles */
+.menu-button {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 11;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Fullscreen Menu Styles */
+.menu-page {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 50, 0.9);
+    z-index: 10;
+    text-align: center;
+    padding-top: 20%;
+    color: #DCDCDC;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-page.active {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    align-items: center;
 }
 
-nav ul li {
-    margin-left: 1rem;
+.menu-list {
+    list-style: none;
+    padding: 0;
 }
 
-nav ul li:first-child {
-    margin-left: 0;
+.menu-list li {
+    margin: 2rem 0;
 }
 
-nav a {
-    color: white;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-    font-family: sans-serif;
-    font-size: 1.25rem;
-    /* 20px */
-    font-weight: 600;
+.menu-list a {
+    font-size: 4rem;
+    color: #DCDCDC;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #495057;
-    border-radius: 4px;
+.menu-list a:hover {
+    color: #FFF;
 }
 
 /* Hero Section Styles */
 .hero {
     background: url('assets/img/concrete.jpeg') no-repeat fixed center/cover;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +136,43 @@ nav a:hover {
     z-index: 1;
 }
 
+/* Keyframes for blucopy rotation */
+@keyframes animate__backInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) scale(0.7);
+    }
+
+    80% {
+        opacity: 0.6;
+        transform: translateX(-10px) scale(0.85);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Blucopy styles */
+.hero-right img.blucopy {
+    width: 35rem;
+    animation: animate__backInRight 4s ease-in-out forwards;
+    position: relative;
+    z-index: -1;
+    /* Ensures it sits behind Morelo */
+}
+
+/* Morelo image styles */
+.hero-left .morelo-image {
+    margin-top: 150px;
+    width: 70rem;
+    position: relative;
+    z-index: 1;
+    /* Ensures it is in front of blucopy */
+}
+
+/* Keyframes for other animations */
 @keyframes rotate {
     from {
         transform: perspective(1000px) rotateY(0deg);
@@ -110,13 +183,17 @@ nav a:hover {
     }
 }
 
-/* New Hero Left and Right Styles */
-.hero-left {
-    position: absolute;
-    top: 25%;
-    left: 5%;
+@keyframes settle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+/* New Hero Left and Right Styles */
 .hero-left {
     position: absolute;
     top: 25%;
@@ -129,8 +206,7 @@ nav a:hover {
 .hero-left .hero-image {
     width: 100%;
     max-width: 300px;
-    /* Adjust as necessary */
-    margin: 15;
+    margin: 15px;
     box-shadow: 2px 2px 5px rgba(169, 169, 169, 0.7);
 }
 
@@ -140,66 +216,15 @@ nav a:hover {
     width: 50rem;
 }
 
-.hero-left .morelo-image {
-    margin-top: 150px;
-    width: 70rem;
-    /* Adjust this to control the overlap */
-}
-
 .hero-right {
     position: absolute;
-    top: 15%;
-    right: 15%;
+    top: 26%;
+    right: 10%;
 }
 
 .hero-right img {
     width: 35rem;
-    animation: spin 2s linear 2;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Menu Button and Page Styles */
-.menu-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    color: #FFF;
-    border: 2px solid #FFF;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.menu-page {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 50, 0.9);
-    z-index: 10;
-    text-align: center;
-    padding-top: 20%;
-    color: #DCDCDC;
-}
-
-.menu-page a {
-    display: block;
-    margin: 1rem 0;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #DCDCDC;
+    animation: settle 4s ease-in-out forwards;
 }
 
 /* Section Styles */
@@ -287,7 +312,6 @@ section {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    /* 16px */
 }
 
 .contact-section form button {
@@ -298,7 +322,6 @@ section {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
-    /* 16px */
 }
 
 /* Social Media Links Styles */
@@ -306,11 +329,10 @@ section {
     margin: 0 1rem;
     color: #333;
     font-size: 1.125rem;
-    /* 18px */
     transition: color 0.3s ease;
 }
 
-.social-media-links a:hover {
+social-media-links a:hover {
     color: #007bff;
 }
 
@@ -333,12 +355,10 @@ section {
 
     nav a {
         font-size: 0.75rem;
-        /* 12px */
     }
 
     .display-1 {
         font-size: 2.5rem;
-        /* 40px */
         bottom: 20%;
     }
 
@@ -368,12 +388,10 @@ section {
 
     nav a {
         font-size: 0.8125rem;
-        /* 13px */
     }
 
     .display-1 {
         font-size: 3.125rem;
-        /* 50px */
         bottom: 15%;
     }
 }
