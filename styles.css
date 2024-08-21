@@ -1,7 +1,5 @@
 @import url('https://use.typekit.net/tqe2ncl.css');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -96,21 +94,25 @@ header .logo {
     margin: 2rem 0;
 }
 
-.menu-list a {
-    font-size: 4rem;
-    color: #DCDCDC;
-    text-decoration: none;
-    transition: color 0.3s ease;
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 600;
 }
 
-.menu-list a:hover {
-    color: #FFF;
+nav a:hover {
+    background-color: #495057;
+    border-radius: 4px;
 }
 
 /* Hero Section Styles */
 .hero {
     background: url('assets/img/concrete.jpeg') no-repeat fixed center/cover;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +122,7 @@ header .logo {
     position: relative;
 }
 
+/* Title Container */
 .title-container {
     display: flex;
     flex-direction: column;
@@ -136,43 +139,6 @@ header .logo {
     z-index: 1;
 }
 
-/* Keyframes for blucopy rotation */
-@keyframes animate__backInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%) scale(0.7);
-    }
-
-    80% {
-        opacity: 0.6;
-        transform: translateX(-10px) scale(0.85);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
-/* Blucopy styles */
-.hero-right img.blucopy {
-    width: 35rem;
-    animation: animate__backInRight 4s ease-in-out forwards;
-    position: relative;
-    z-index: -1;
-    /* Ensures it sits behind Morelo */
-}
-
-/* Morelo image styles */
-.hero-left .morelo-image {
-    margin-top: 150px;
-    width: 70rem;
-    position: relative;
-    z-index: 1;
-    /* Ensures it is in front of blucopy */
-}
-
-/* Keyframes for other animations */
 @keyframes rotate {
     from {
         transform: perspective(1000px) rotateY(0deg);
@@ -183,17 +149,13 @@ header .logo {
     }
 }
 
-@keyframes settle {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+/* New Hero Left and Right Styles */
+.hero-left {
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
 
-/* New Hero Left and Right Styles */
 .hero-left {
     position: absolute;
     top: 25%;
@@ -206,7 +168,8 @@ header .logo {
 .hero-left .hero-image {
     width: 100%;
     max-width: 300px;
-    margin: 15px;
+    /* Adjust as necessary */
+    margin: 15;
     box-shadow: 2px 2px 5px rgba(169, 169, 169, 0.7);
 }
 
@@ -214,6 +177,12 @@ header .logo {
     margin-top: 180px;
     margin-bottom: -100px;
     width: 50rem;
+}
+
+.hero-left .morelo-image {
+    margin-top: 150px;
+    width: 70rem;
+    /* Adjust this to control the overlap */
 }
 
 .hero-right {
@@ -224,7 +193,52 @@ header .logo {
 
 .hero-right img {
     width: 35rem;
-    animation: settle 4s ease-in-out forwards;
+    animation: spin 2s linear 2;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Menu Button and Page Styles */
+.menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.menu-page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 50, 0.9);
+    z-index: 10;
+    text-align: center;
+    padding-top: 20%;
+    color: #DCDCDC;
+}
+
+.menu-page a {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #DCDCDC;
 }
 
 /* Section Styles */
@@ -240,7 +254,8 @@ section {
 .about-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-    min-height: 100vh;
+    min-height: 100lvh;
+    /* Large viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +264,6 @@ section {
 
 .about-section h2 {
     font-size: 2.8125rem;
-    /* 45px */
     margin-bottom: 2rem;
 }
 
@@ -264,7 +278,6 @@ section {
 
 .about-content h3 {
     font-size: 1.875rem;
-    /* 30px */
     margin-bottom: 1.5rem;
 }
 
@@ -272,7 +285,6 @@ section {
     margin-bottom: 1rem;
     font-family: sans-serif;
     font-size: 1.25rem;
-    /* 20px */
     text-align: justify;
 }
 
@@ -280,16 +292,6 @@ section {
 .gallery-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-}
-
-@media (max-width: 768px) {
-    .slider-container {
-        max-width: 100%;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Contact Section Styles */
@@ -338,7 +340,7 @@ social-media-links a:hover {
 
 /* Media Queries */
 
-/* Mobile Phones */
+/* Smartphones */
 @media (max-width: 600px) {
     header {
         padding: 1rem;
@@ -369,6 +371,11 @@ social-media-links a:hover {
     section {
         padding: 2rem 1rem;
     }
+
+    .hero {
+        height: 100svh;
+        /* Small viewport height for better control on smartphones */
+    }
 }
 
 /* Tablets */
@@ -393,5 +400,10 @@ social-media-links a:hover {
     .display-1 {
         font-size: 3.125rem;
         bottom: 15%;
+    }
+
+    .hero {
+        height: 100lvh;
+        /* Large viewport height for tablets */
     }
 }
