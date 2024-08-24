@@ -15,7 +15,7 @@ body {
     font-family: "bodega-serif", sans-serif;
     color: #fff;
     background: url(./pic/bg.png) no-repeat fixed center/cover;
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 /* Header Styles */
@@ -48,7 +48,7 @@ body {
     /* No border */
     padding: 0.5rem 1rem;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 3rem;
     position: absolute;
     top: 0.5rem;
 }
@@ -89,7 +89,7 @@ body {
 
 .hero-left {
     position: absolute;
-    top: 30rem;
+    top: 45rem;
     /* Push Felix and Morelo cubes down */
     left: 10%;
     transform: translateY(-50%);
@@ -103,9 +103,9 @@ body {
 
 .blucopy-image {
     position: absolute;
-    top: 3rem;
+    top: 8rem;
     left: calc(50% - 1.5rem);
-    width: 3rem;
+    width: 15rem;
     /* Set image size to 3rem */
     height: auto;
     /* Maintain aspect ratio */
