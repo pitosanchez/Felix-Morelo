@@ -56,7 +56,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     background-color: rgba(0, 0, 50, 0.9);
     z-index: 10;
     text-align: center;
@@ -75,7 +75,7 @@ body {
 /* Hero Section Styles */
 .hero {
     background: url('assets/img/concrete.jpeg') no-repeat fixed center/cover;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,12 +98,14 @@ body {
 .hero-left .felix-image {
     margin-top: 180px;
     margin-bottom: -100px;
-    width: 50rem;
+    width: 100%;
+    max-width: 50rem;
 }
 
 .hero-left .morelo-image {
     margin-top: 150px;
-    width: 70rem;
+    width: 100%;
+    max-width: 70rem;
 }
 
 .hero-right {
@@ -112,7 +114,8 @@ body {
 }
 
 .hero-right img {
-    width: 35rem;
+    width: 100%;
+    max-width: 35rem;
     animation: spin 2s linear 2;
 }
 
@@ -120,15 +123,16 @@ body {
 .about-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-    min-height: 100lvh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .about-section h2 {
-    font-size: 2.8125rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
@@ -142,14 +146,14 @@ body {
 }
 
 .about-content h3 {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     margin-bottom: 1.5rem;
 }
 
 .about-content p {
     margin-bottom: 1rem;
     font-family: sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -157,7 +161,8 @@ body {
 .gallery-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
-    max-width: 75%;
+    max-width: 100%;
+    padding: 2rem;
     margin: auto;
 }
 
@@ -220,6 +225,7 @@ body {
 .contact-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
+    padding: 2rem;
 }
 
 .contact-section form {
@@ -230,7 +236,8 @@ body {
 
 .contact-section form input,
 .contact-section form textarea {
-    width: 80%;
+    width: 100%;
+    max-width: 80%;
     padding: 1rem;
     margin: 0.5rem 0;
     border: 1px solid #ccc;
@@ -260,7 +267,8 @@ body {
     color: #007bff;
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
+/* Mobile Devices */
 @media (max-width: 600px) {
     .header {
         padding: 1rem;
@@ -276,10 +284,30 @@ body {
     }
 
     .hero {
-        height: 100svh;
+        height: 100vh;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .hero-left .felix-image,
+    .hero-left .morelo-image,
+    .hero-right img {
+        width: 100%;
+        max-width: 30rem;
     }
 }
 
+/* Tablets */
 @media (min-width: 601px) and (max-width: 768px) {
     .header {
         padding: 1rem 1.5rem;
@@ -291,6 +319,95 @@ body {
     }
 
     .hero {
-        height: 100lvh;
+        height: 100vh;
+    }
+
+    .about-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .about-content p {
+        font-size: 1.125rem;
+    }
+
+    .hero-left .felix-image,
+    .hero-left .morelo-image,
+    .hero-right img {
+        width: 100%;
+        max-width: 40rem;
+    }
+}
+
+/* Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .header .logo {
+        width: 130px;
+        left: 2rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .about-section h2 {
+        font-size: 2.8125rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.875rem;
+    }
+
+    .about-content p {
+        font-size: 1.25rem;
+    }
+
+    .hero-left .felix-image,
+    .hero-left .morelo-image,
+    .hero-right img {
+        width: 100%;
+        max-width: 45rem;
+    }
+}
+
+/* Desktops and Large Laptops */
+@media (min-width: 1025px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .header .logo {
+        width: 150px;
+        left: 2rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .about-section h2 {
+        font-size: 2.8125rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.875rem;
+    }
+
+    .about-content p {
+        font-size: 1.25rem;
+    }
+
+    .hero-left .felix-image,
+    .hero-left .morelo-image,
+    .hero-right img {
+        width: 100%;
+        max-width: 50rem;
     }
 }
