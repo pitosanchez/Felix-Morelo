@@ -1,83 +1,55 @@
-// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    initCarousels();
+    initSmoothScroll();
+});
 
 function toggleMenu() {
     const menu = document.getElementById('menuPage');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
 
-// Smooth scroll for home button
-document.querySelector('.logo-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+function initSmoothScroll() {
+    document.querySelector('.logo-link').addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});
+}
 
-// Carousel JavaScript
-let currentIndex = 0;
+function initCarousels() {
+    const mainCarousel = new Carousel('#carouselInner');
+    const spotsCarousel = new Carousel('#carouselInnerSpots');
+}
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    if (index >= slides.length) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = slides.length - 1;
-    } else {
-        currentIndex = index;
+class Carousel {
+    constructor(carouselSelector) {
+        this.carouselInner = document.querySelector(carouselSelector);
+        this.slides = this.carouselInner.querySelectorAll('.carousel-item');
+        this.currentIndex = 0;
+        this.initCarousel();
     }
 
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === currentIndex) {
-            slide.classList.add('active');
-        }
-    });
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-// Initialize Carousel
-document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentIndex);
-});
-
-// Additional Carousel for Spots Section
-let currentIndexSpots = 0;
-
-function showSlideSpots(index) {
-    const slidesSpots = document.querySelectorAll('#carouselInnerSpots .carousel-item');
-    if (index >= slidesSpots.length) {
-        currentIndexSpots = 0;
-    } else if (index < 0) {
-        currentIndexSpots = slidesSpots.length - 1;
-    } else {
-        currentIndexSpots = index;
+    initCarousel() {
+        this.showSlide(this.currentIndex);
+        document.querySelectorAll(`[onclick*='${this.carouselInner.id}']`).forEach(button => {
+            button.addEventListener('click', () => this.handleButtonClick(button));
+        });
     }
 
-    slidesSpots.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === currentIndexSpots) {
-            slide.classList.add('active');
+    showSlide(index) {
+        if (index >= this.slides.length) this.currentIndex = 0;
+        else if (index < 0) this.currentIndex = this.slides.length - 1;
+        else this.currentIndex = index;
+
+        this.slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+
+    handleButtonClick(button) {
+        if (button.classList.contains('carousel-control-next')) {
+            this.showSlide(this.currentIndex + 1);
+        } else if (button.classList.contains('carousel-control-prev')) {
+            this.showSlide(this.currentIndex - 1);
         }
-    });
+    }
 }
-
-function nextSlideSpots() {
-    showSlideSpots(currentIndexSpots + 1);
-}
-
-function prevSlideSpots() {
-    showSlideSpots(currentIndexSpots - 1);
-}
-
-// Initialize Spots Carousel
-document.addEventListener('DOMContentLoaded', () => {
-    showSlideSpots(currentIndexSpots);
-});

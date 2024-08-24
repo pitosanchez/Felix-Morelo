@@ -31,21 +31,25 @@ body {
     align-items: center;
 }
 
-.header .logo {
+.logo-link {
     position: absolute;
     left: 2rem;
-    width: 1rem;
-    /* Smaller size for the logo */
     cursor: pointer;
+    width: 3rem;
+}
+
+.logo {
+    width: 3rem;
+    /* Adjusted to 3rem as requested */
+    height: auto;
+    /* Maintains aspect ratio */
 }
 
 .menu-button {
     background-color: transparent;
     color: #FFF;
     font-family: 'Anton', sans-serif;
-    /* Use Anton font for MENU */
     border: none;
-    /* No border */
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 3rem;
@@ -90,7 +94,6 @@ body {
 .hero-left {
     position: absolute;
     top: 45rem;
-    /* Push Felix and Morelo cubes down */
     left: 10%;
     transform: translateY(-50%);
 }
@@ -103,14 +106,12 @@ body {
 
 .blucopy-image {
     position: absolute;
-    top: 8rem;
-    left: calc(50% - 1.5rem);
+    top: calc(50% - 4rem);
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 15rem;
-    /* Set image size to 3rem */
     height: auto;
-    /* Maintain aspect ratio */
     animation: bounce 2s ease-in-out 1;
-    /* Bounce animation */
 }
 
 /* Animation */
@@ -171,7 +172,7 @@ body {
     text-align: justify;
 }
 
-/* Gallery Section Styles */
+/* Gallery and Spots Section Styles */
 .gallery-section,
 .spots-section {
     background-color: rgba(255, 255, 255, 0.8);
@@ -182,12 +183,10 @@ body {
     margin-top: 5rem;
     margin-bottom: 5rem;
     text-align: center;
-    /* Center the title */
 }
 
 .spots-section {
     background-color: #d0e8ff;
-    /* Light blue for Spots */
 }
 
 .carousel {
@@ -204,13 +203,11 @@ body {
 .carousel-item {
     min-width: 100%;
     display: none;
-    /* Hide all by default */
     transition: opacity 0.5s ease;
 }
 
 .carousel-item.active {
     display: block;
-    /* Show the active slide */
 }
 
 .carousel-image {
@@ -248,7 +245,6 @@ body {
 /* Contact Section Styles */
 .contact-section {
     background-color: #d0e8ff;
-    /* Blue background */
     color: #333;
     padding: 2rem;
     text-align: center;
@@ -281,18 +277,7 @@ body {
     font-size: 1rem;
 }
 
-.payment-links a {
-    margin: 0 1rem;
-    color: #333;
-    font-size: 1.125rem;
-    transition: color 0.3s ease;
-}
-
-.payment-links a:hover {
-    color: #007bff;
-}
-
-/* Social Media Links Styles */
+.payment-links a,
 .social-media-links a {
     margin: 0 1rem;
     color: #333;
@@ -300,20 +285,19 @@ body {
     transition: color 0.3s ease;
 }
 
+.payment-links a:hover,
 .social-media-links a:hover {
     color: #007bff;
 }
 
 /* Media Queries for Responsiveness */
-/* Mobile Devices */
 @media (max-width: 600px) {
     .header {
         padding: 1rem;
     }
 
-    .header .logo {
+    .logo {
         width: 1rem;
-        left: 1rem;
     }
 
     .menu-button {
@@ -339,22 +323,19 @@ body {
     }
 
     .hero-left .felix-image,
-    .hero-left .morelo-image,
-    .hero-right img {
+    .hero-left .morelo-image {
         width: 100%;
         max-width: 30rem;
     }
 }
 
-/* Tablets */
 @media (min-width: 601px) and (max-width: 768px) {
     .header {
         padding: 1rem 1.5rem;
     }
 
-    .header .logo {
+    .logo {
         width: 1rem;
-        left: 1.5rem;
     }
 
     .hero {
@@ -376,22 +357,19 @@ body {
     }
 
     .hero-left .felix-image,
-    .hero-left .morelo-image,
-    .hero-right img {
+    .hero-left .morelo-image {
         width: 100%;
         max-width: 40rem;
     }
 }
 
-/* Small Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
     .header {
         padding: 1rem 2rem;
     }
 
-    .header .logo {
+    .logo {
         width: 1rem;
-        left: 2rem;
     }
 
     .hero {
@@ -413,22 +391,19 @@ body {
     }
 
     .hero-left .felix-image,
-    .hero-left .morelo-image,
-    .hero-right img {
+    .hero-left .morelo-image {
         width: 100%;
         max-width: 45rem;
     }
 }
 
-/* Desktops and Large Laptops */
 @media (min-width: 1025px) {
     .header {
         padding: 1rem 2rem;
     }
 
-    .header .logo {
+    .logo {
         width: 1rem;
-        left: 2rem;
     }
 
     .hero {
@@ -450,8 +425,7 @@ body {
     }
 
     .hero-left .felix-image,
-    .hero-left .morelo-image,
-    .hero-right img {
+    .hero-left .morelo-image {
         width: 100%;
         max-width: 50rem;
     }
