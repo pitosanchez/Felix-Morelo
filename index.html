@@ -32,7 +32,7 @@
     <!-- Hero Section -->
     <main class="hero">
       <div class="title-container">
-        <!-- Placeholder for title content -->
+        <img src="assets/img/blucopy.png" alt="Redgold" class="blucopy-image" />
       </div>
 
       <!-- Additional Hero Elements -->
@@ -43,10 +43,6 @@
           alt="Morelo"
           class="morelo-image"
         />
-      </div>
-
-      <div class="hero-right">
-        <img src="assets/img/blucopy.png" alt="Redgold" />
       </div>
     </main>
 
@@ -254,6 +250,47 @@
       </div>
     </section>
 
+    <!-- Spots Section (New Carousel) -->
+    <section id="spots" class="spots-section">
+      <h2>Spots</h2>
+      <div class="carousel">
+        <div class="carousel-inner" id="carouselInnerSpots">
+          <!-- Carousel Items -->
+          <div class="carousel-item active">
+            <img
+              src="assets/img/faces.png"
+              class="carousel-image"
+              alt="Faces"
+            />
+            <div class="carousel-caption">
+              <h5>Faces</h5>
+            </div>
+          </div>
+          <!-- Repeat for each image -->
+          <div class="carousel-item">
+            <img
+              src="assets/img/1 murals and chalk drawings.jpg"
+              class="carousel-image"
+              alt="Murals and Chalk Drawings"
+            />
+            <div class="carousel-caption">
+              <h5>Murals and Chalk Drawings</h5>
+            </div>
+          </div>
+          <!-- Add more carousel items here... -->
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" onclick="prevSlideSpots()">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" onclick="nextSlideSpots()">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2>Contact</h2>
@@ -263,6 +300,12 @@
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
+      <div class="payment-links">
+        <a href="https://venmo.com/felixmorelo">Venmo</a>
+        <a href="https://cash.app/$felixmorelo">CashApp</a>
+        <a href="https://zellepay.com/felixmorelo">Zelle</a>
+        <a href="https://paypal.me/felixmorelo">PayPal</a>
+      </div>
       <div class="social-media-links">
         <a href="https://facebook.com/felixmorelo">Facebook</a>
         <a href="https://twitter.com/felixmorelo">Twitter</a>
