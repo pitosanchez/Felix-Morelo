@@ -5,18 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleMenu() {
     const menu = document.getElementById('menuPage');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    if (menu) { // Ensure menu exists
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
 }
 
 function initSmoothScroll() {
-    document.querySelector('.logo-link').addEventListener('click', function (event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    const logoLink = document.querySelector('.logo-link');
+    if (logoLink) { // Ensure logo-link exists
+        logoLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 }
 
 function initCarousels() {
-    const mainCarousel = new Carousel('#carouselInner');
+    // Define your carousel initialization logic here
+    console.log('Carousel initialized');
+    // Add your carousel setup logic here
+}
+
+function initCarousels() {
     const spotsCarousel = new Carousel('#carouselInnerSpots');
 }
 
