@@ -39,10 +39,11 @@ body {
 }
 
 .logo {
-    width: 3rem;
+    width: 6rem;
     /* Adjusted to 3rem as requested */
     height: auto;
     /* Maintains aspect ratio */
+
 }
 
 .menu-button {
@@ -93,7 +94,8 @@ body {
 
 .hero-left {
     position: absolute;
-    top: 45rem;
+    top: 50rem;
+    bottom: -30rem;
     left: 10%;
     transform: translateY(-50%);
 }
