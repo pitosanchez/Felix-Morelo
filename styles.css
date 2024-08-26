@@ -28,22 +28,43 @@ body {
     z-index: 3;
     display: flex;
     justify-content: center;
+    /* Adjusted for better layout control */
     align-items: center;
+    padding: 1rem 2rem;
+    /* Added padding for space */
+}
+
+/* Logo Container Styles */
+.logo-container {
+    flex: 1;
+    /* Takes up the necessary space */
 }
 
 .logo-link {
-    position: absolute;
-    left: 2rem;
     cursor: pointer;
-    width: 3rem;
+    display: flex;
+    /* Flexbox to center the logo */
+    align-items: center;
+    width: 5rem;
+    /* Adjustable width */
 }
 
 .logo {
-    width: 3rem;
-    /* Adjusted to 3rem as requested */
+    width: 100%;
+    /* Ensures the logo fits within the parent width */
     height: auto;
     /* Maintains aspect ratio */
+    max-width: 100%;
+    /* Prevents the image from exceeding its parent size */
+}
 
+/* Menu Container Styles */
+.menu-container {
+    flex: 1;
+    /* Takes up the necessary space */
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns button to the right */
 }
 
 .menu-button {
@@ -54,8 +75,7 @@ body {
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 3rem;
-    position: absolute;
-    top: 0.5rem;
+
 }
 
 /* Menu Page */
@@ -298,12 +318,19 @@ body {
         padding: 1rem;
     }
 
-    .logo {
-        width: 1rem;
+    .logo-container,
+    .menu-container {
+        flex: 1;
+    }
+
+    .logo-link {
+        width: 1.5rem;
+        /* Ensure the logo is responsive */
     }
 
     .menu-button {
-        right: 5px;
+        font-size: 2rem;
+        /* Smaller button size for mobile */
     }
 
     .hero {
@@ -336,8 +363,9 @@ body {
         padding: 1rem 1.5rem;
     }
 
-    .logo {
-        width: 1rem;
+    .logo-link {
+        width: 2rem;
+        /* Adjust logo size for tablets */
     }
 
     .hero {
@@ -370,8 +398,9 @@ body {
         padding: 1rem 2rem;
     }
 
-    .logo {
-        width: 1rem;
+    .logo-link {
+        width: 2.5rem;
+        /* Adjust logo size for medium screens */
     }
 
     .hero {
@@ -404,8 +433,9 @@ body {
         padding: 1rem 2rem;
     }
 
-    .logo {
-        width: 1rem;
+    .logo-link {
+        width: 3rem;
+        /* Adjust logo size for larger screens */
     }
 
     .hero {
