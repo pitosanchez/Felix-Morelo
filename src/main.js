@@ -26,9 +26,6 @@ function initCarousels() {
     // Add your carousel setup logic here
 }
 
-function initCarousels() {
-    const spotsCarousel = new Carousel('#carouselInnerSpots');
-}
 
 class Carousel {
     constructor(carouselSelector) {
