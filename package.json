@@ -1,0 +1,15 @@
+{
+  "name": "felix-morelo",
+  "version": "1.0.0",
+  "description": "Felix Morelo website - still in build",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "Robert Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.4.2"
+  }
+}
