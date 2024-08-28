@@ -2,6 +2,7 @@
   "name": "felix-morelo",
   "version": "1.0.0",
   "description": "Felix Morelo website - still in build",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "dev": "vite",
