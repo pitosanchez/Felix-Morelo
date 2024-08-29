@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    initCarousels();
-    initSmoothScroll();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     initCarousels();
+//     initSmoothScroll();
+// });
 
 function toggleMenu() {
     const menu = document.getElementById('menuPage');
@@ -9,6 +9,9 @@ function toggleMenu() {
         menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     }
 }
+
+window.toggleMenu = toggleMenu
+
 
 function initSmoothScroll() {
     const logoLink = document.querySelector('.logo-link');
@@ -34,6 +37,7 @@ class Carousel {
         this.currentIndex = 0;
         this.initCarousel();
     }
+
 
     initCarousel() {
         this.showSlide(this.currentIndex);

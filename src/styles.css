@@ -14,14 +14,12 @@ html {
 body {
     font-family: "bodega-serif", sans-serif;
     color: #fff;
-    background: url(./pic/bg.png) no-repeat fixed center/cover;
-    font-size: 3rem;
 }
 
 /* Header Styles */
 .header {
     background-color: transparent;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -34,48 +32,30 @@ body {
     /* Added padding for space */
 }
 
-/* Logo Container Styles */
-.logo-container {
-    flex: 1;
-    /* Takes up the necessary space */
-}
+
 
 .logo-link {
     cursor: pointer;
-    display: flex;
-    /* Flexbox to center the logo */
-    align-items: center;
-    width: 5rem;
-    /* Adjustable width */
+    position: fixed;
+    top: 12px;
+    left: 12px;
 }
 
 .logo {
-    width: 100%;
+    width: 50px;
     /* Ensures the logo fits within the parent width */
     height: auto;
-    /* Maintains aspect ratio */
-    max-width: 100%;
-    /* Prevents the image from exceeding its parent size */
 }
 
-/* Menu Container Styles */
-.menu-container {
-    flex: 1;
-    /* Takes up the necessary space */
-    display: flex;
-    justify-content: flex-end;
-    /* Aligns button to the right */
-}
 
 .menu-button {
     background-color: transparent;
-    color: #FFF;
+    color: white;
     font-family: 'Anton', sans-serif;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 3rem;
-
 }
 
 /* Menu Page */
@@ -104,55 +84,71 @@ body {
 /* Hero Section Styles */
 .hero {
     background: url('/assets/img/concrete.jpeg') no-repeat fixed center/cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: center;
-}
-
-.hero-left {
-    position: absolute;
-    top: 50rem;
-    bottom: -30rem;
-    left: 10%;
-    transform: translateY(-50%);
-}
-
-.felix-image,
-.morelo-image {
-    width: 10rem;
-    height: auto;
 }
 
 .blucopy-image {
-    position: absolute;
-    top: calc(50% - 4rem);
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 15rem;
+    width: calc(80vw);
     height: auto;
-    animation: bounce 2s ease-in-out 1;
+    animation: bounce 3.5s ease-in-out 1;
+    max-width: 600px;
 }
+
+.hero-name {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.felix-image,
+.morelo-image {
+    width: 45%;
+    height: auto;
+}
+
+
 
 /* Animation */
 @keyframes bounce {
 
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
+    0% {
+        transform: translateY(-1000px);
+    }
+
+    25% {
         transform: translateY(0);
     }
 
+
     40% {
-        transform: translateY(-20px);
+        transform: translateY(-60px);
+    }
+
+    50% {
+        transform: translateY(0);
     }
 
     60% {
-        transform: translateY(-10px);
+        transform: translateY(-40px);
+    }
+
+    70% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -313,24 +309,19 @@ body {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .header {
         padding: 1rem;
     }
 
-    .logo-container,
-    .menu-container {
-        flex: 1;
-    }
-
     .logo-link {
         width: 1.5rem;
-        /* Ensure the logo is responsive */
+       
     }
 
     .menu-button {
-        font-size: 2rem;
-        /* Smaller button size for mobile */
+        font-size: 3rem;
+       
     }
 
     .hero {
@@ -365,7 +356,7 @@ body {
 
     .logo-link {
         width: 2rem;
-        /* Adjust logo size for tablets */
+        
     }
 
     .hero {
@@ -400,7 +391,7 @@ body {
 
     .logo-link {
         width: 2.5rem;
-        /* Adjust logo size for medium screens */
+        
     }
 
     .hero {
@@ -435,7 +426,7 @@ body {
 
     .logo-link {
         width: 3rem;
-        /* Adjust logo size for larger screens */
+        
     }
 
     .hero {
@@ -461,4 +452,4 @@ body {
         width: 100%;
         max-width: 50rem;
     }
-}
+} */
