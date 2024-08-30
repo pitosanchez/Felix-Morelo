@@ -193,71 +193,20 @@ body {
 /* Gallery and Spots Section Styles */
 .gallery-section,
 .spots-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #333;
     max-width: 100%;
-    padding: 2rem;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
 .spots-section {
     background-color: #d0e8ff;
-}
-
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    display: none;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-item.active {
-    display: block;
-}
-
-.carousel-image {
-    width: 100%;
-    display: block;
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.carousel-control-prev {
-    left: 10px;
-}
-
-.carousel-control-next {
-    right: 10px;
 }
 
 /* Contact Section Styles */
