@@ -21,5 +21,6 @@ function initSmoothScroll() {
 }
 
 new Carousel("carousel-1")
-
+new Carousel("carousel-2")
+new Carousel("carousel-3")
 

@@ -83,7 +83,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    background: url('/assets/img/concrete.jpeg') no-repeat fixed center/cover;
+    background: url('/assets/img/concrete.png') no-repeat fixed center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -192,6 +192,7 @@ body {
 
 /* Gallery and Spots Section Styles */
 .gallery-section,
+.cubes-section,
 .spots-section {
     color: rgba(255, 255, 255, 0.8);
     background-color: #333;
@@ -205,8 +206,13 @@ body {
     padding: 2rem;
 }
 
+
+.cubes-section {
+    background-color: red;
+}
+
 .spots-section {
-    background-color: #d0e8ff;
+    background-color: green;
 }
 
 /* Contact Section Styles */
