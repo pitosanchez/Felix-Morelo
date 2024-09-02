@@ -1,5 +1,5 @@
-import leftArrowImage from "/assets/img/left-arrow-white.svg"
-import rightArrowImage from "/assets/img/right-arrow-white.svg"
+import leftArrowImage from "/assets/images/left-arrow-white.svg"
+import rightArrowImage from "/assets/images/right-arrow-white.svg"
 
 export class Carousel {
     constructor(id) {

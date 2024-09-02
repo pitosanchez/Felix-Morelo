@@ -83,7 +83,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    background: url('/assets/img/concrete.png') no-repeat fixed center/cover;
+    background: url('/assets/images/concrete.webp') no-repeat fixed center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
