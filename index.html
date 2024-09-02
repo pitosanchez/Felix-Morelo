@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/carousel.css" />
   </head>
 
   <body>
@@ -151,97 +152,185 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
-      <h2>Gallery</h2>
-      <div class="carousel">
-        <div class="carousel-inner" id="carouselInner">
-          <div class="carousel-item">
-            <img
-              src="/assets/img/faces.png"
-              class="carousel-image"
-              alt="Faces"
-            />
-            <div class="carousel-caption"><h5>Faces</h5></div>
-          </div>
-          <div class="carousel-item active">
-            <img
-              src="/assets/img/ItgoodLucktoKiss.jpg"
-              class="carousel-image"
-              alt="Murals and Chalk Drawings"
-            />
-            <div class="carousel-caption">
-              <h5>Murals and Chalk Drawings</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/giant good luck spot drawing[11].jpg"
-              class="carousel-image"
-              alt="Giant Good Luck Spot Drawing"
-            />
-            <div class="carousel-caption">
-              <h5>Giant Good Luck Spot Drawing</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/7.jpg"
-              class="carousel-image"
-              alt="Kissing Spot"
-            />
-            <div class="carousel-caption">
-              <h5>Kissing Spot</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/5.jpg"
-              class="carousel-image"
-              alt="Good Luck Spot"
-            />
-            <div class="carousel-caption">
-              <h5>Good Luck Spot</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/3.jpg"
-              class="carousel-image"
-              alt="Good Luck Spot with Artist"
-            />
-            <div class="carousel-caption">
-              <h5>Good Luck Spot with Artist</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/3 giant screaming spot.jpg"
-              class="carousel-image"
-              alt="Screaming Spot"
-            />
-            <div class="carousel-caption">
-              <h5>Screaming Spot</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/img/4 engagement spot.jpg"
-              class="carousel-image"
-              alt="Engagement Spot"
-            />
-            <div class="carousel-caption">
-              <h5>Engagement Spot</h5>
-            </div>
-          </div>
-        </div>
+      <h2>Steet Art</h2>
+      <div id="carousel-1" class="carousel">
+        <img
+          src="/assets/img/felix.png"
+          class="carousel-photo active"
+          alt="Faces"
+        />
 
-        <button class="carousel-control-prev" onclick="prevSlide()">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" onclick="nextSlide()">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <img
+          src="/assets/img/giantscreamingspot.png"
+          class="carousel-photo"
+          alt="Murals and Chalk Drawings"
+        />
+
+        <img
+          src="/assets/img/healingSpot.png"
+          class="carousel-photo"
+          alt="Giant Good Luck Spot Drawing"
+        />
+
+        <img
+          src="/assets/img/kissingSpot.png"
+          class="carousel-photo"
+          alt="Kissing Spot"
+        />
+
+        <img
+          src="/assets/img/spotseverywhere.png"
+          class="carousel-photo"
+          alt="Good Luck Spot"
+        />
+
+        <img
+          src="/assets/img/storefront.png"
+          class="carousel-photo"
+          alt="Good Luck Spot with Artist"
+        />
+
+        <img
+          src="/assets/img/giantscreamingspot.png"
+          class="carousel-photo"
+          alt="Screaming Spot"
+        />
+
+        <img
+          src="/assets/img/engagementspot.png"
+          class="carousel-photo"
+          alt="Engagement Spot"
+        />
+
+        <img
+          src="/assets/img/internationalWomansSpot.png"
+          class="carousel-photo"
+          alt="Murals and Chalk Drawings"
+        />
+
+        <img
+          src="/assets/img/theChillSpot.png"
+          class="carousel-photo"
+          alt="Murals and Chalk Drawings"
+        />
+      </div>
+    </section>
+
+    <section id="cubes" class="cubes-section">
+      <h2>Cubes</h2>
+      <div id="carousel-2" class="carousel">
+        <img
+          src="/assets/cubes/cube-painting -1-2024.png"
+          class="carousel-photo active"
+          alt="Faces"
+        />
+
+        <img
+          src="/assets/cubes/cube-painting-2-2024.png"
+          class="carousel-photo"
+          alt="Murals and Chalk Drawings"
+        />
+
+        <img
+          src="/assets/cubes/cube-painting-3-2024.png"
+          class="carousel-photo"
+          alt="Giant Good Luck Spot Drawing"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing5.png"
+          class="carousel-photo"
+          alt="Kissing Spot"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing7-024.png"
+          class="carousel-photo"
+          alt="Good Luck Spot"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing82024.png"
+          class="carousel-photo"
+          alt="Good Luck Spot with Artist"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing92024.png"
+          class="carousel-photo"
+          alt="Screaming Spot"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing102024.png"
+          class="carousel-photo"
+          alt="Engagement Spot"
+        />
+
+        <img
+          src="/assets/cubes/cubedrawing112024.png"
+          class="carousel-photo"
+          alt="Engagement Spot"
+        />
+      </div>
+    </section>
+
+    <section id="spots" class="spots-section">
+      <h2>Spots</h2>
+      <div id="carousel-3" class="carousel">
+        <img
+          src="/assets/spots/twentyspots.png"
+          class="carousel-photo active"
+          alt="Faces"
+        />
+
+        <img
+          src="/assets/spots/blackwhite.png"
+          class="carousel-photo"
+          alt="Murals and Chalk Drawings"
+        />
+
+        <img
+          src="/assets/spots/good-luck-faces.png"
+          class="carousel-photo"
+          alt="Giant Good Luck Spot Drawing"
+        />
+
+        <img
+          src="/assets/spots/giant-girl-5.png"
+          class="carousel-photo"
+          alt="Kissing Spot"
+        />
+
+        <img
+          src="/assets/spots/fucking-spot.png"
+          class="carousel-photo"
+          alt="Good Luck Spot"
+        />
+
+        <img
+          src="/assets/spots/high-five.png"
+          class="carousel-photo"
+          alt="Good Luck Spot with Artist"
+        />
+
+        <img
+          src="/assets/spots/badluckspot.png"
+          class="carousel-photo"
+          alt="Screaming Spot"
+        />
+
+        <img
+          src="/assets/spots/green-spot.png"
+          class="carousel-photo"
+          alt="Engagement Spot"
+        />
+
+        <img
+          src="/assets/spots/gls.png"
+          class="carousel-photo"
+          alt="Engagement Spot"
+        />
       </div>
     </section>
 
@@ -254,7 +343,7 @@
           <div class="carousel-item active">
             <img
               src="/assets/img/faces.png"
-              class="carousel-image"
+              class="carousel-photo"
               alt="Faces"
             />
             <div class="carousel-caption"><h5>Faces</h5></div>
@@ -262,7 +351,7 @@
           <div class="carousel-item">
             <img
               src="/assets/img/1 murals and chalk drawings.jpg"
-              class="carousel-image"
+              class="carousel-photo"
               alt="Murals and Chalk Drawings"
             />
             <div class="carousel-caption">
