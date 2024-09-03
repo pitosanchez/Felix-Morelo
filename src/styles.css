@@ -250,17 +250,9 @@ body {
     font-size: 1rem;
 }
 
-.payment-links a,
-.social-media-links a {
-    margin: 0 1rem;
-    color: #333;
-    font-size: 1.125rem;
-    transition: color 0.3s ease;
-}
-
-.payment-links a:hover,
-.social-media-links a:hover {
-    color: #007bff;
+.social-link {
+    height: 25px;
+    width: auto;
 }
 
 /* Media Queries for Responsiveness */
