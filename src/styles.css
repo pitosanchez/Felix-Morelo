@@ -190,12 +190,30 @@ body {
     text-align: justify;
 }
 
+
+/* Gallery Title Styling */
+.gallery-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 9rem;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    /* Adjust this value to fine-tune the overlap with the gallery section */
+    z-index: 2;
+    /* Ensure it sits above other elements */
+    margin-bottom: -80px;
+    /* Negative margin to overlap with the black background */
+}
+
+
+
 /* Gallery and Spots Section Styles */
 .gallery-section,
 .cubes-section,
 .spots-section {
     color: rgba(255, 255, 255, 0.8);
-    background-color: #333;
+    background-color: black;
     max-width: 100%;
     margin: auto;
     margin-top: 5rem;
