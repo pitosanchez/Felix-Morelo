@@ -250,51 +250,38 @@ body {
     font-size: 1rem;
 }
 
-.social-link {
-    height: 25px;
+.social-media-links,
+.payment-links {
+    display: flex;
+    /* Aligns icons horizontally */
+    justify-content: center;
+    /* Centers icons within the container */
+    align-items: center;
+    /* Centers icons vertically */
+    gap: 20px;
+    /* Even spacing between icons */
+    margin-top: 20px;
+    /* Adds some spacing above the icons */
+}
+
+.social-media-links img,
+.payment-links img {
+    height: 50px;
+    /* Consistent height for all icons */
     width: auto;
+    /* Consistent width for all icons */
 }
 
-/* Media Queries for Responsiveness */
-/* @media (max-width: 600px) {
-    .header {
-        padding: 1rem;
-    }
-
-    .logo-link {
-        width: 1.5rem;
-       
-    }
-
-    .menu-button {
-        font-size: 3rem;
-       
-    }
-
-    .hero {
-        height: 100vh;
-    }
-
-    .about-section h2,
-    .spots-section h2,
-    .gallery-section h2 {
-        font-size: 2rem;
-    }
-
-    .about-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-
-    .hero-left .felix-image,
-    .hero-left .morelo-image {
-        width: 100%;
-        max-width: 30rem;
-    }
+.about-content p {
+    font-size: 1rem;
 }
+
+.hero-left .felix-image,
+.hero-left .morelo-image {
+    width: 100%;
+    max-width: 30rem;
+}
+
 
 @media (min-width: 601px) and (max-width: 768px) {
     .header {
@@ -303,7 +290,7 @@ body {
 
     .logo-link {
         width: 2rem;
-        
+
     }
 
     .hero {
@@ -338,7 +325,7 @@ body {
 
     .logo-link {
         width: 2.5rem;
-        
+
     }
 
     .hero {
@@ -373,7 +360,7 @@ body {
 
     .logo-link {
         width: 3rem;
-        
+
     }
 
     .hero {
@@ -399,4 +386,4 @@ body {
         width: 100%;
         max-width: 50rem;
     }
-} */
+}
