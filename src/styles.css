@@ -182,6 +182,58 @@ body {
   text-align: justify;
 }
 
+/* CSS for Articles Section */
+.articles-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.articles-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.article-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.article {
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+}
+
+.article p {
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
 /* Gallery Title Styling */
 .gallery-title {
   font-family: "Anton", sans-serif;
