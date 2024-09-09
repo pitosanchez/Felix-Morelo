@@ -70,16 +70,18 @@ body {
   color: #dcdcdc;
 }
 
-.menu-page:hover {
-  color: red;
-}
-
 .menu-page a {
   display: block;
   margin: 1rem 0;
   font-size: 5rem;
   text-decoration: none;
   color: #dcdcdc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-page a:hover {
+  color: #ffff99; /* Light yellow on hover */
+  transform: scale(1.3); /* Slightly enlarge the text on hover */
 }
 
 /* Hero Section Styles */
