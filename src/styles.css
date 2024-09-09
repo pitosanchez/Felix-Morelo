@@ -66,14 +66,18 @@ body {
   background-color: rgba(0, 0, 50, 0.9);
   z-index: 10;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 8%;
   color: #dcdcdc;
+}
+
+.menu-page:hover {
+  color: red;
 }
 
 .menu-page a {
   display: block;
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 5rem;
   text-decoration: none;
   color: #dcdcdc;
 }
