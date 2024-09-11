@@ -163,7 +163,7 @@ body {
 }
 
 .about-section h2 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
   font-family: "Anton", sans-serif;
 }
@@ -217,7 +217,7 @@ body {
   width: 150px;
   text-align: center;
   background-color: #fff;
-  border: 2px solid #f07b7b;
+  border: 5px solid #4e32eb;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -239,7 +239,7 @@ body {
 
 .article p {
   padding: 10px;
-  font-size: 17px;
+  font-size: 13.5px;
   color: black;
 }
 
@@ -314,6 +314,11 @@ body {
   font-size: 1rem;
 }
 
+.contact-section img {
+  width: 16.5rem;
+  height: auto; /* Maintain aspect ratio */
+}
+
 .social-media-links,
 .payment-links {
   display: flex;
@@ -356,106 +361,3 @@ body {
 footer {
   color: black;
 }
-
-/* 
-@media (min-width: 601px) and (max-width: 768px) {
-  .header {
-    padding: 1rem 1.5rem;
-  }
-
-  .logo-link {
-    width: 2rem;
-  }
-
-  .hero {
-    height: 100vh;
-  }
-
-  .about-section h2,
-  .spots-section h2,
-  .gallery-section h2 {
-    font-size: 2.5rem;
-  }
-
-  .about-content h3 {
-    font-size: 1.75rem;
-  }
-
-  .about-content p {
-    font-size: 1.5rem;
-  }
-
-  .hero-left .felix-image,
-  .hero-left .morelo-image {
-    width: 100%;
-    max-width: 40rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    padding: 1rem 2rem;
-  }
-
-  .logo-link {
-    width: 2.5rem;
-  }
-
-  .hero {
-    height: 100vh;
-  }
-
-  .about-section h2,
-  .spots-section h2,
-  .gallery-section h2 {
-    font-size: 2.8125rem;
-  }
-
-  .about-content h3 {
-    font-size: 1.875rem;
-  }
-
-  .about-content p {
-    font-size: 1.25rem;
-  }
-
-  .hero-left .felix-image,
-  .hero-left .morelo-image {
-    width: 100%;
-    max-width: 45rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .header {
-    padding: 1rem 2rem;
-  }
-
-  .logo-link {
-    width: 3rem;
-  }
-
-  .hero {
-    height: 100vh;
-  }
-
-  .about-section h2,
-  .spots-section h2,
-  .gallery-section h2 {
-    font-size: 2.8125rem;
-  }
-
-  .about-content h3 {
-    font-size: 1.875rem;
-  }
-
-  .about-content p {
-    font-size: 1.25rem;
-  }
-
-  .hero-left .felix-image,
-  .hero-left .morelo-image {
-    width: 100%;
-    max-width: 50rem;
-  }
-} */
