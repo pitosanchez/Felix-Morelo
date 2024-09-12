@@ -315,12 +315,15 @@ body {
 }
 
 .contact-section img {
-  width: 16.5rem;
+  width: 35rem;
   height: auto; /* Maintain aspect ratio */
+  margin-top: -30px;
+  margin-bottom: 50px;
 }
 
 .social-media-links,
 .payment-links {
+  margin-bottom: 30px;
   display: flex;
   /* Aligns icons horizontally */
   justify-content: center;
@@ -329,7 +332,7 @@ body {
   /* Centers icons vertically */
   gap: 2.5rem;
   /* Even spacing between icons */
-  margin-top: 20px;
+  margin-top: 10px;
   /* Adds some spacing above the icons */
 }
 
