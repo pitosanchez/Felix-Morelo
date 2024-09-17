@@ -325,23 +325,16 @@ body {
 .payment-links {
   margin-bottom: 30px;
   display: flex;
-  /* Aligns icons horizontally */
   justify-content: center;
-  /* Centers icons within the container */
   align-items: center;
-  /* Centers icons vertically */
   gap: 2.5rem;
-  /* Even spacing between icons */
   margin-top: 10px;
-  /* Adds some spacing above the icons */
 }
 
 .social-media-links img,
 .payment-links img {
   height: 50px;
-  /* Consistent height for all icons */
   width: auto;
-  /* Consistent width for all icons */
 }
 
 .about-content p {
