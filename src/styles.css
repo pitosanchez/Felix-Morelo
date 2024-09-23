@@ -315,7 +315,8 @@ body {
 }
 
 .contact-section img {
-  width: 35rem;
+  max-width: 35rem;
+  width: 100%;
   height: auto; /* Maintain aspect ratio */
   margin-top: -30px;
   margin-bottom: 50px;
