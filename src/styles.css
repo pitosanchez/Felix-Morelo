@@ -279,6 +279,17 @@ body {
   background-color: green;
 }
 
+.photo-credit {
+  position: absolute;
+  top: -9px; /* Adjust this value to move the text up or down */
+  left: 85px; /* Adjust this value to move the text left or right */
+  color: white; /* Ensure the text is visible over the image */
+  font-size: 1rem; /* Adjust the font size */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* Contact Section Styles */
 .contact-section {
   background-color: #d0e8ff;
@@ -319,7 +330,7 @@ body {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   margin-top: -30px;
-  margin-bottom: 50px;
+  margin-bottom: -30;
 }
 
 .social-media-links,
