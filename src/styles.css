@@ -292,7 +292,7 @@ body {
 
 /* Contact Section Styles */
 .contact-section {
-  background-color: #d0e8ff;
+  background-color: #88cfc4;
   color: #333;
   padding: 2rem;
   text-align: center;
@@ -326,11 +326,10 @@ body {
 }
 
 .contact-section img {
-  max-width: 35rem;
+  max-width: 30rem;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
-  margin-top: -30px;
-  margin-bottom: -30;
+  margin-top: -25px;
 }
 
 .social-media-links,
